@@ -1,8 +1,8 @@
 # Spam classification
 
-Repo for training a baseline model for the AI Rush Spam classification challenge. The model is just a simple ResNet50v2
-model. We first fine-tune the last layer a few epochs and then train the full model until convergence. Note that the
-dataset has unlabeled data, but to train the baseline model we only use the labeled data. 
+Folder for training a model for the AI Rush Spam classification challenge. The model is just a simple ResNet50v2
+model. We first fine-tune the last layer a few epochs and then train the full model until convergence. **Note that the
+dataset has unlabeled data, I use this data by self-training method in this model.** 
 
 ## Important notes
 1. The function that's bind to NSML infer needs to output a dataframe with the two columns `filename` and `y_pred`,

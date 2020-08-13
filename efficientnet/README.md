@@ -1,6 +1,6 @@
 # Spam classification
 
-Repo for training a baseline model for the AI Rush Spam classification challenge. The model is just a simple ResNet50v2
+Folder for training a model using EfficientNet for the AI Rush Spam classification challenge. The model is just a **EfficientNetB3**
 model. We first fine-tune the last layer a few epochs and then train the full model until convergence. Note that the
 dataset has unlabeled data, but to train the baseline model we only use the labeled data. 
 
@@ -26,7 +26,7 @@ entrypoint when running `nsml run` but you can ignore it otherwise.
 
 ## Run experiment
 
-To run the baseline model training, stand in the `airush2020/spam` folder and run 
+To run the model training, stand in the `airush2020/spam` folder and run 
 ```
 nsml run -e nsml_train.py -d spam-1 -m "A good message" -g 1 -a "--experiment_name v1"
 ```

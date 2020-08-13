@@ -1,7 +1,7 @@
 # Spam classification
 
-Repo for training a baseline model for the AI Rush Spam classification challenge. The model is just a simple ResNet50v2
-model. We first fine-tune the last layer a few epochs and then train the full model until convergence. Note that the
+Repo for training a model for the AI Rush Spam classification challenge. The model is just a simple ResNet50v2
+model. **We first fine-tune the last layer a few epochs and then train the full model except initial bottom layer of CNN until convergence.** Note that the
 dataset has unlabeled data, but to train the baseline model we only use the labeled data. 
 
 ## Important notes
